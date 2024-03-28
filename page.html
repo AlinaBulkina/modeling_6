@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моделирование. Затухающие колебания в LCR контуре. Фазовый портрет</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+<h1>Моделирование. Затухающие колебания в LCR контуре. Фазовый портрет</h1>
+
+<div>
+    <form id="inputForm">
+        <label for="L">Индуктивность (Гн):</label>
+        <input type="number" id="L" name="inductance" value="1.0" min="0"><br>
+        <label for="R">Сопротивление (Ом):</label>
+        <input type="number" id="R" name="resistance" step="any" value="0.5" min="0"><br>
+        <label for="C">Емкость конденсатора (Ф):</label>
+        <input type="number" id="C" name="capacitance" step="any" value="0.1" min="0"><br>
+    </form>
+</div>
+
+<div id="graph" style="width:800px;height:640px;margin:0 auto;"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
